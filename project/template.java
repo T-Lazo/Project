@@ -12,8 +12,7 @@ public class template
         pci.read();
 
         System.out.println("\nThis machine has "+
-            pci.busCount()+" PCI buses ");
-        System.out.println("THIS IS TJ'S TEST TYPE");
+            pci.busCount()+" PCI buses... YOU'RE WELCOME GAHHHHHH ");
 
         // Iterate through each bus
         for (int i = 0; i < pci.busCount(); i++) {
