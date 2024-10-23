@@ -6,7 +6,11 @@
 
 public class pciInfo 
 {
-    // Refresh the current values and counters - call this before other methods
+
+    private int busCount;
+
+    /*** Refresh the current values and counters - call this before other methods
+    */
     public native void read ();
 
     // Return the number of PCI buses
@@ -23,7 +27,8 @@ public class pciInfo
 
     // Return the vendor ID of a PCI device
     public native int vendorID (int bus, int device, int function);
-
+    // THESE TWO "VENDORID" AND "PRODUCT ID" WILL BE STORED IN AN ARRAY OR CSV OR WHATEVA
+    // IT'S CALLED, THE REST HERE WILL NOT-TJ
     // Return the product ID of a PCI device
     public native int productID (int bus, int device, int function);
 }
