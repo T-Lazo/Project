@@ -21,6 +21,7 @@ public class HashMap_Csv {
         vendorMap.put("0x1028", "Dell Corporation");
         vendorMap.put("0x0781", "SanDisk Corporation");
         vendorMap.put("0x103C", "HP Corporation");
+        vendorMap.put("0x80EE", "Oracle Corporation");
 
 
         // Add more entries as needed
