@@ -15,7 +15,7 @@ public class pciInfo
 
     // Return the number of PCI buses
     public native int busCount ();
-
+    //busCount is an integere that's why you're using int rather than something like void
     // Return the number of devices on a PCI bus
     public native int deviceCount (int bus);
 
