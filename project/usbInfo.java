@@ -20,5 +20,6 @@ public class usbInfo
 
     // Return the product ID of a USB device
     public native int productID (int bus, int device);
+
 }
 

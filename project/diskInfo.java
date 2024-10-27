@@ -1,3 +1,4 @@
+
 /*
  *  Disk information class for JNI
  *
@@ -5,7 +6,6 @@
  *
  *  TODO not currently implemented
  */
-
 public class diskInfo 
 {
      public native int diskCount ();

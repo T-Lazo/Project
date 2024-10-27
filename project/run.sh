@@ -1,2 +1,2 @@
 #!/bin/bash
-java -Djava.library.path=libsysinfo HashMap_Csv
+java -Djava.library.path=libsysinfo Pci_TJ

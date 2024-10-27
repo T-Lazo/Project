@@ -4,6 +4,10 @@ public class HashMap_Csv {
     // Define the HashMap to store Vendor ID -> Vendor Name mappings
     private static HashMap<String, String> vendorMap = new HashMap<>();
 
+    public HashMap_Csv(){
+
+    }
+
     public static void showPCI() {
         pciInfo pci_test_tj = new pciInfo();
         pci_test_tj.read();
