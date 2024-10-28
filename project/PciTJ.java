@@ -97,6 +97,8 @@ public class PciTJ {
     // Collects PCI information and returns as string
     public String[][] getPCIInfo() { // this function returning 2d string array
         pci.read();
+        System.out.println(pci.totalFunctionCount());
+        System.out.println(" ");
 
         loadVendorMap();//basically ensures that vendorMap hashmap is fully populated and ready to use.
         loadProductMap();//generally it's just a good thing to do before processing all the pci information
@@ -111,6 +113,8 @@ public class PciTJ {
 
                 for (int k = 0; k < pci.functionCount(i, j); k++) { // Iterate through each function
                     if (pci.functionPresent(i, j, k) > 0) { //sees if a function is present. i.e. if a function is present then...
+
+                        System.out.println(pci.functionCount(j, k));
 
                         String vendorId = String.format("0x%04X", pci.vendorID(i, j, k));// a method that returns the vendorid of function k on device j on bus i
                         String productId = String.format("0x%04X", pci.productID(i, j, k));//ditto but w product id
