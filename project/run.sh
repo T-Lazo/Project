@@ -1,2 +1,2 @@
 #!/bin/bash
-java -Djava.library.path=libsysinfo Pci_TJ
+java -Djava.library.path=libsysinfo PciTJ
